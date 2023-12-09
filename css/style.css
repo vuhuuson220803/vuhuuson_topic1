@@ -238,6 +238,10 @@ span.check-w3 {
     transition: all 0.5s cubic-bezier(0.27, 0.38, 0.58, 1);
 
 }
+.GU ,.Q,.GQ{
+    margin-top: 50px;
+    border: 2px #000 solid;
+}
 
 /*--social-icons--*/
 
