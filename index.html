@@ -2,40 +2,30 @@
 <html lang="en">
 
 <head>
-	<title>Đăng Nhập</title>
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<!-- Meta tag Keywords -->
-	<!-- css files -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
-	<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
-	<!-- //css files -->
-	<!-- web-fonts -->
-	<link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet"><!--online fonts-->
-	<!-- //web-fonts -->
+    <title>Đăng Nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
 </head>
 
 <body>
-	<div>
-		<div class="main-container">
-
-			<div class="header-w3l">
-				<h1>Đăng Nhập</h1>
-			</div>
-
-			<div class="main-content-agile">
-				<div class="w3ls-pro">
-					<h2>Login Now</h2>
-				</div>
-				<div class="sub-main-w3ls">
-					<form action="#" method="post">
-						<input placeholder="Enter your E-mail" name="enter mail" type="email" required="">
+    <div class="main-container">
+        <div class="header-w3l">
+            <h1>Đăng Nhập</h1>
+        </div>
+        <div class="main-content-agile">
+            <div class="w3ls-pro">
+                <h2>Login Now</h2>
+            </div>
+            <div class="sub-main-w3ls">
+                <form id="loginForm">
+                    <input placeholder="Enter your E-mail" name="email" type="email" required="">
 						<span class="icon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-						<input placeholder="Enter Password" name="Password" type="password" required="">
+						<input placeholder="Enter Password" name="password" type="password" required="">
 						<span class="icon2"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
-						<input placeholder="Role" name="role" type="role" required="">
+						
 
 
 						<div class="checkbox-w3">
@@ -50,319 +40,52 @@
 								<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
+						
 						<input type="submit" value="">
-					</form>
-				</div>
-			</div>
 
-		</div>
-	</div>
-	<div class="U">
+                </form>
+            </div>
+        </div>
+    </div>
 
-		<h2 style="text-align: center;">Trang Quản Lý User</h2>
-		<button type="submit">Thêm User</button>
-		<button type="submit">Tìm Kiếm</button>
+    <script>
+        // // Kiểm tra nếu người dùng đã đăng nhập (sử dụng localStorage)
+        // function checkLogin() {
+        //     var isAdmin = localStorage.getItem('isAdmin');
 
-		<table style="width:100%">
-			<tr>
-				<td>Email</td>
-				<td>PassWord</td>
-				<td>Role</td>
-				<td>Liên Kết FB</td>
-				<td>Liên Kết Google</td>
-				<td>Chức năng</td>
-			</tr>
-			<tr>
-				<td>ad@gmail.com</td>
-				<td>1</td>
-				<td>admin</td>
-				<td>https://www.facebook.com/profile.php?id=100013434324</td>
-				<td>https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHxDjhhhRJHg</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
+        //     if (isAdmin === 'true') {
+        //         // Nếu là admin, chuyển hướng đến trang chủ admin
+        //         window.location.href = 'index.html';
+        //     }
+        // }
 
-			</tr>
-			<tr>
-				<td>son@gmail.com</td>
-				<td>220803</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001955</td>
-				<td>https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHxzMvsQkJRXtvvD</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
-			<tr>
-				<td>bing@gmail.com</td>
-				<td>123434534</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsdfgfdg</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
-			<tr>
-				<td>minh@gmail.com</td>
-				<td>123434534</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsddgre</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
-			<tr>
-				<td>trang@gmail.com</td>
-				<td>1234454</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsdfdgdfg</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
-			<tr>
-				<td>huong@gmail.com</td>
-				<td>123434534</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsd</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
+        // // Thực hiện kiểm tra đăng nhập khi trang được tải
+        // checkLogin();
 
+        // Xử lý sự kiện đăng nhập
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
 
-		</table>
-	</div>
-	<div class="GU">
+            // Giả sử bạn có một hệ thống đăng nhập ở đây
+            var email = document.getElementsByName('email')[0].value;
+            var password = document.getElementsByName('password')[0].value;
 
-		<h2 style="text-align: center;">Trang Quản Lý Group User</h2>
-		<button type="submit">Thêm User</button>
-		<table style="width:100%">
-			<tr>
-				<td>Group</td>
-				<td colspan="2">Quantity</td>
-				<td>Email</td>
-				<td>Role</td>
-				<td>Liên Kết FB</td>
-				<td>Liên Kết Google</td>
-				<td>Chức năng</td>
-				<td>Chức năng nâng cao</td>
+            // Kiểm tra đăng nhập, nếu là admin, lưu trạng thái vào localStorage
+            if (email === 'admin@example.com' && password === '123') {
+                localStorage.setItem('isAdmin', 'true');
+                // Chuyển hướng đến trang chủ admin
+                window.location.href = 'trangchu.html';
+            }
+			else if(email === 'son@gmail.com' && password === '1234'){
+				localStorage.setItem('isUser', 'true');
+                // Chuyển hướng đến trang chủ admin
+                window.location.href = 'trangU.html';
 
-			</tr>
-			<tr>
-				<td rowspan="2">Admin</td>
-				<td rowspan="2">2</td>
-				<td rowspan="2">Admin</td>
-
-				<td>ad@gmail.com</td>
-				<td>admin</td>
-				<td>https://www.facebook.com/profile.php?id=100013434324</td>
-				<td>https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHxDjhhhRJHg</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa </button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-				<td rowspan="2">
-					<ol><button type="submit">Xóa nhóm </button></ol>
-				</td>
-
-			</tr>
-			<tr>
-				<td>ad1@gmail.com</td>
-				<td>admin</td>
-				<td>https://www.facebook.com/profile.php?id=10001955</td>
-				<td>https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHxzMvsQkJRXtvvD</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="4">User</td>
-
-				<td rowspan="4">4</td>
-				<td rowspan="2">User ít sử dụng</td>
-
-				<td>bing@gmail.com</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsdfgfdg</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-				<td rowspan="2">
-					<ol><button type="submit">Xóa nhóm </button></ol>
-				</td>
-			</tr>
-			<tr>
-				<td>minh@gmail.com</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsddgre</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-
-			</tr>
-			<tr>
-				<td rowspan="2">User sử dụng thường xuyên</td>
-
-				<td>trang@gmail.com</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsdfdgdfg</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-				<td rowspan="2">
-					<ol><button type="submit">Xóa nhóm </button></ol>
-				</td>
-
-			</tr>
-			<tr>
-				<td>huong@gmail.com</td>
-				<td>khachhang</td>
-				<td>https://www.facebook.com/profile.php?id=10001112</td>
-				<td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsd</td>
-				<td style="display: flex;">
-					<ol><button type="submit">Sửa</button></ol>
-					<ol><button type="submit">Xóa</button></ol>
-				</td>
-			</tr>
-
-
-		</table>
-	</div>
-	<div class="Q">
-		<h1>Role Management</h1>
-
-		<table style="width: 100%;">
-			<thead>
-				<tr>
-					<th>Quyền</th>
-					<th>Mô tả</th>
-					<th>Người Dùng</th>
-					<th>Thao Tác</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Quyền 1</td>
-					<td>Thêm ,Sửa ,Xóa User</td>
-					<td>1</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-				<tr>
-					<td>Quyền 2</td>
-					<td>Thêm ,Sửa ,Xóa Thông Tin User</td>
-					<td>15</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-				<tr>
-					<td>Quyền 3</td>
-					<td>Thêm, Sửa, Xóa Quyền Truy Cập </td>
-					<td>1</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-				<tr>
-					<td>Quyền 4</td>
-					<td>Tìm Kiếm Và Lọc Quyền</td>
-					<td>1</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-				
-				<tr>
-					<td>Quyền 5</td>
-					<td>Điều Khiển Mức Độ Truy Cập</td>
-					<td>1</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-				<tr>
-					<td>Quyền 6</td>
-					<td>Tìm Kiếm Và Xem Số Lượng User</td>
-					<td>15</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-				<tr>
-					<td>Quyền 7</td>
-					<td>Chức Năng Kế Thừa Quyền Hạn</td>
-					<td>15</td>
-					<td><button>Edit</button> <button>Delete</button></td>
-				</tr>
-			</tbody>
-		</table>
-
-	</div>
-	<div class="GQ">
-		
-    <h1> Group Role Management </h1>
-
-    <table style="width: 100%;" >
-        <thead>
-            <tr>
-                <th>Chức Năng</th>
-                <th colspan="2" >Nhóm</th>
-              
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td >Hiển thị Danh sách Nhóm Quyền</td>
-                <td >Admin</td>
-                <td >User</td>
-            </tr>
-            <tr>
-                <td>Sửa Thông Tin Nhóm Quyền</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Xóa Thông Tin Nhóm Quyền</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Mô Tả Nhóm Quyền</td>
-                <td>Quản lý user ,có thể thêm sửa xóa update user, thêm sửa xóa sản phẩm</td>
-                <td>tìm kiếm,tạo mới,sửa tài khoản</td>
-            </tr>
-            <tr>
-                <td>Kiểm soát Lịch sử Thay đổi(Theo dõi lịch sử thay đổi của nhóm quyền trong hệ thống)</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Kiểm tra Quyền Hạn(Kiểm tra quyền hạn của một người dùng thuộc nhóm quyền nào)</td>
-                <td></td>
-                <td></td>
-            </tr>
-			<tr>
-                <td>Liên Kết Nhóm Quyền với Người Dùng(Gán nhóm quyền cho người dùng cụ thể)</td>
-                <td></td>
-                <td></td>
-            </tr>
-
-        </tbody>
-    </table>
-
-	</div>
-
-
-
+			} else  {
+                alert('Đăng nhập không thành công. Vui lòng kiểm tra lại email và mật khẩu.');
+            }
+        });
+    </script>
 </body>
 
 </html>

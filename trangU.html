@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #menu-icon {
+            float: left;
+            cursor: pointer;
+            margin-left: 10px;
+            /* Khoảng cách từ biểu tượng menu đến nội dung khác */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #e9d8f4;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            display: none;
+            float: left;
+        }
+
+        ul.show {
+            display: block;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            float: left;
+            width: 100%;
+            text-align: left; 
+        }
+
+        li a.active {
+            background-color: #58257b;
+            font-weight: bold;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #db7093;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>User </h1>
+    </header>
+    <nav>
+        <div id="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#dashboard">Bảng Điều Khiển</a></li>
+            <li><a href="#profile">Hồ Sơ Cá Nhân</a></li>
+            <li><a href="#settings">Cài Đặt</a></li>
+            <li><a href="#logout">Đăng Xuất</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <h2>Bảng Điều Khiển Người Dùng</h2>
+        
+        <button  type="submit">Tìm Kiếm</button>
+    
+    <table style="width:100%">
+        <tr>
+            <td>Email</td>
+            <td>PassWord</td>
+            <td>Role</td>
+            <td>Liên Kết FB</td>
+            <td>Liên Kết Google</td>
+            <td>Chức năng</td>
+        </tr>
+        <tr>
+            <td>ad@gmail.com</td>
+            <td>1</td>
+            <td>admin</td>
+            <td>https://www.facebook.com/profile.php?id=100013434324</td>
+            <td>https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHxDjhhhRJHg</td>
+            <td style="display: flex;">
+                <ol><button type="submit">Sửa</button></ol>
+                <ol><button type="submit">Xóa</button></ol>
+            </td>
+
+        </tr>
+        <tr>
+            <td>son@gmail.com</td>
+            <td>220803</td>
+            <td>khachhang</td>
+            <td>https://www.facebook.com/profile.php?id=10001955</td>
+            <td>https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHxzMvsQkJRXtvvD</td>
+            <td style="display: flex;">
+                <ol><button type="submit">Sửa</button></ol>
+                <ol><button type="submit">Xóa</button></ol>
+            </td>
+        </tr>
+        <tr>
+            <td>bing@gmail.com</td>
+            <td>123434534</td>
+            <td>khachhang</td>
+            <td>https://www.facebook.com/profile.php?id=10001112</td>
+            <td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsdfgfdg</td>
+            <td style="display: flex;">
+                <ol><button type="submit">Sửa</button></ol>
+                <ol><button type="submit">Xóa</button></ol>
+            </td>
+        </tr>
+        <tr>
+            <td>minh@gmail.com</td>
+            <td>123434534</td>
+            <td>khachhang</td>
+            <td>https://www.facebook.com/profile.php?id=10001112</td>
+            <td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsddgre</td>
+            <td style="display: flex;">
+                <ol><button type="submit">Sửa</button></ol>
+                <ol><button type="submit">Xóa</button></ol>
+            </td>
+        </tr>
+        <tr>
+            <td>trang@gmail.com</td>
+            <td>1234454</td>
+            <td>khachhang</td>
+            <td>https://www.facebook.com/profile.php?id=10001112</td>
+            <td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsdfdgdfg</td>
+            <td style="display: flex;">
+                <ol><button type="submit">Sửa</button></ol>
+                <ol><button type="submit">Xóa</button></ol>
+            </td>
+        </tr>
+        <tr>
+            <td>huong@gmail.com</td>
+            <td>123434534</td>
+            <td>khachhang</td>
+            <td>https://www.facebook.com/profile.php?id=10001112</td>
+            <td>https://google.com/mail/u/0/#inbox/FMfcgzGwdhcgjfhgsd</td>
+            <td style="display: flex;">
+                <ol><button type="submit">Sửa</button></ol>
+                <ol><button type="submit">Xóa</button></ol>
+            </td>
+        </tr>
+    </section>
+
+    <footer>
+        &copy; 2024 User Management System
+    </footer>
+
+    <script>
+        var menuIcon = document.getElementById('menu-icon');
+        var nav = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', function (event) {
+            nav.classList.toggle('show');
+            event.stopPropagation();
+        });
+
+        document.addEventListener('click', function () {
+            nav.classList.remove('show');
+        });
+    </script>
+</body>
+
+</html>
